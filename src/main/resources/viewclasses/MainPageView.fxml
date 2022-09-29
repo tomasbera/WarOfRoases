@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" minHeight="600.00" minWidth="800" prefHeight="600.0" prefWidth="700.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.Wargames.battlesimulation.controllers.MainPageController">
+   <content>
+      <VBox alignment="CENTER" prefHeight="596.0" prefWidth="696.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="73.0" prefWidth="696.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="290.0" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../projectpictures/desktopLogo@2x.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="523.0" prefWidth="696.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="455.0" prefWidth="696.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="455.0" prefWidth="240.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="197.0" fitWidth="222.0" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../projectpictures/pngwing.com (1).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="411.0" prefWidth="270.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="455.0" prefWidth="254.0" spacing="7.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button alignment="CENTER" lineSpacing="10.0" mnemonicParsing="false" onAction="#toTutorialPage" prefHeight="45.0" prefWidth="120.0" text="Tutorial" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button alignment="CENTER" lineSpacing="10.0" mnemonicParsing="false" onAction="#toNewArmy" prefHeight="45.0" prefWidth="120.0" text="Create Army" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#toArmyDetails" prefHeight="45.0" prefWidth="120.0" text="Chose Army" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#toSimulation" prefHeight="45.0" prefWidth="120.0" text="Simulation" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#exitButton" prefHeight="45.0" prefWidth="120.0" text="Exit" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="411.0" prefWidth="218.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="204.0" fitWidth="218.0" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../projectpictures/pngwing.com.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

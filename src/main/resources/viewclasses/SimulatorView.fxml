@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600" minWidth="800" prefHeight="600.0" prefWidth="800.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.Wargames.battlesimulation.controllers.SimulationViewController">
+   <content>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="290.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="toNewArmyButton" mnemonicParsing="false" onAction="#toNewArmy" prefHeight="30.0" prefWidth="111.0" text="Create Army" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="toArmyDetailButton" minWidth="47.0" mnemonicParsing="false" onAction="#toArmyDetails" prefHeight="30.0" prefWidth="117.0" text="Choose Army" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="toSimulateButton" mnemonicParsing="false" text="Simulation" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="49.0" prefWidth="223.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WarGames" wrappingWidth="130.689453125" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="49.0" prefWidth="204.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="toMenuButton" mnemonicParsing="false" onAction="#toMainPage" prefHeight="26.0" prefWidth="76.0" text="Menu" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="68.0" prefWidth="324.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="armyOneText" strokeType="OUTSIDE" strokeWidth="0.0" text="Army1" wrappingWidth="161.78515625" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="57.0" prefWidth="176.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="scoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="0 - 0" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="68.0" prefWidth="297.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="armyTwoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Army2" wrappingWidth="190.689453125" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="128.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="259.0" prefWidth="360.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ListView fx:id="ArmyOneList" prefHeight="294.0" prefWidth="391.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="259.0" prefWidth="337.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ListView fx:id="ArmyTwoList" prefHeight="293.0" prefWidth="378.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="67.0" prefWidth="647.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fx:id="layoutText" strokeType="OUTSIDE" strokeWidth="0.0" text="Terrain" wrappingWidth="72.0" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <ChoiceBox fx:id="warGamesTerrainInput" onMouseClicked="#setImage" prefWidth="150.0" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="75.0" prefWidth="394.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fx:id="winningArmyText" strokeType="OUTSIDE" strokeWidth="0.0" text="WinningArmy" wrappingWidth="345.57470703125" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Impact" size="31.0" />
+                                 </font>
+                              </Text>
+                              <HBox alignment="CENTER" prefHeight="75.0" prefWidth="148.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="289.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="285.0" prefWidth="208.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="274.0" prefWidth="208.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fx:id="layoutImageView" fitHeight="166.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="289.0" prefWidth="359.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="251.0" prefWidth="336.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TableView fx:id="winningArmyTable" prefHeight="221.0" prefWidth="312.0" VBox.vgrow="ALWAYS">
+                                 <columns>
+                                    <TableColumn fx:id="winningArmyUT" prefWidth="141.0" text="Unit Type" />
+                                    <TableColumn fx:id="winningArmyUN" prefWidth="121.0" text="Unit Name" />
+                                    <TableColumn fx:id="winningArmyH" prefWidth="71.0" text="Health" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="334.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="liveSimulationButtonText" mnemonicParsing="false" onAction="#liveSimulate" prefHeight="25.0" prefWidth="129.0" text="Live Simulate" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <HBox alignment="TOP_CENTER" prefHeight="59.0" prefWidth="184.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="simulationButtonText" mnemonicParsing="false" onAction="#simulate" text="Simulate">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Button>
+                                 </children></HBox>
+                              <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetMethod" prefHeight="25.0" prefWidth="75.0" text="Reset" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="290.0" prefWidth="181.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

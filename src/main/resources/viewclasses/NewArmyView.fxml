@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600" minWidth="800" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.Wargames.battlesimulation.controllers.NewArmyController">
+   <content>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="301.0" HBox.hgrow="ALWAYS">
+                     <children>
+                      <Button fx:id="newArmyButton" alignment="CENTER" lineSpacing="10.0" mnemonicParsing="false" text="Create Army">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button alignment="CENTER" lineSpacing="10.0" mnemonicParsing="false" onAction="#toArmyDetail" text="Chose Army">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button alignment="CENTER" lineSpacing="10.0" mnemonicParsing="false" onAction="#toSimulate" text="Simulate">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="158.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Army Creation" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="40.0" prefWidth="306.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#toMenu" prefHeight="25.0" prefWidth="86.0" text="Menu">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="330.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="331.0" prefWidth="177.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="331.0" prefWidth="206.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="331.0" prefWidth="141.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="331.0" prefWidth="134.0" HBox.hgrow="NEVER">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Army Name" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="armyNameTXT" alignment="CENTER" prefHeight="25.0" prefWidth="159.0" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></TextField>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="188.0" prefWidth="297.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="armyNameTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="ArmyName" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="newArmyTable" prefHeight="249.0" prefWidth="297.0" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="UT" prefWidth="128.0" text="UnitType" />
+                              <TableColumn fx:id="UN" prefWidth="120.0" text="UnitName" />
+                              <TableColumn fx:id="UH" prefWidth="76.0" text="Health" />
+                           </columns>
+                        </TableView>
+                        <HBox alignment="TOP_CENTER" prefHeight="90.0" prefWidth="297.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#createArmy" text="Create Army">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <HBox alignment="CENTER" prefHeight="75.0" prefWidth="170.0" HBox.hgrow="ALWAYS" />
+                              <Button mnemonicParsing="false" onAction="#deleteUnit" text="Delete Unit">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </opaqueInsets>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="331.0" prefWidth="141.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="232.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="255.0" prefWidth="570.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Type" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font></Text>
+                              <ChoiceBox fx:id="unitTypeBox" prefWidth="150.0" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="375.0" prefWidth="161.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="123.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Name">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="unitNameTXT" alignment="CENTER" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></TextField>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="242.0" prefWidth="663.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="187.0" prefWidth="306.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ListView fx:id="armyListView" prefHeight="198.0" prefWidth="306.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="306.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#addUnitsToArmy" text="Add To Army">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="63.0" prefWidth="306.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#convertToFile" text="Convert To File">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="255.0" prefWidth="535.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="237.0" prefWidth="179.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="123.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Number" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="unitNumberTXT">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></TextField>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="252.0" prefWidth="179.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="147.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Health" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="unitHealthTXT">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></TextField>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children></HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600" minWidth="800" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.Wargames.battlesimulation.controllers.TerrainTutorialController">
+   <content>
+      <VBox alignment="CENTER" prefHeight="597.0" prefWidth="697.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="369.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="197.0" prefWidth="360.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="198.0" fitWidth="361.0" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../terrainpictures/forest.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="197.0" prefWidth="339.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="198.0" prefWidth="342.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Forrest">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <VBox alignment="CENTER" prefHeight="0.0" prefWidth="338.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Forrest is a Type of Terrain" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="0.0" prefWidth="338.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This terrain gives ranged units melee" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="145.0" prefWidth="338.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cavalry and Commander units get debuff" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Infantry units gets a buff" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="230.0" prefWidth="338.0" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="381.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="209.0" prefWidth="361.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hill">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <VBox alignment="CENTER" prefHeight="0.0" prefWidth="338.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The second type of terrain is Hill" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="0.0" prefWidth="338.0" VBox.vgrow="ALWAYS" />
+                        <VBox alignment="CENTER" prefHeight="145.0" prefWidth="338.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hill Give The Ranged Units a buff to attack" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children></VBox>
+                        <VBox alignment="CENTER" prefHeight="278.0" prefWidth="361.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="209.0" prefWidth="336.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="209.0" fitWidth="335.0" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../terrainpictures/hill.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="363.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="191.0" prefWidth="359.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="191.0" fitWidth="357.0" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../terrainpictures/plains.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="191.0" prefWidth="321.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Plains">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <VBox alignment="CENTER" prefHeight="0.0" prefWidth="338.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cavalry and Commander units get buff" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Text>
+                           </children></VBox>
+                        <VBox alignment="CENTER" prefHeight="114.0" prefWidth="330.0" VBox.vgrow="ALWAYS" />
+                        <VBox alignment="CENTER" prefHeight="4.0" prefWidth="330.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#toNextPage" text="NextPage" />
+                           </children></VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

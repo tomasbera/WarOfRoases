@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="600" minHeight="800" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.Wargames.battlesimulation.controllers.ArmyDetailsViewController">
+   <content>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="43.0" prefWidth="352.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#toNewArmy" text="Create Army" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="toArmyDetailsButton" mnemonicParsing="false" text="ChooseArmy" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#toSimulatorPage" text="Simulation" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="296.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WarGames" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="48.0" prefWidth="340.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#toMainPage" text="Menu" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="152.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="150.0" prefWidth="160.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="armyOneText" strokeType="OUTSIDE" strokeWidth="0.0" text="Army1" wrappingWidth="154.9248046875" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="198.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#getFileArmyOne" text="Select Army" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="148.0" prefWidth="141.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#getFileArmyTwo" text="Select Army" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="148.0" prefWidth="219.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="armyTwoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Army2" wrappingWidth="213.78515625" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="406.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="405.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TableView fx:id="armyOneTableView" prefHeight="405.0" prefWidth="351.0" HBox.hgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="armyOneUT" prefWidth="92.0" text="UnitType" />
+                              <TableColumn fx:id="armyOneUN" minWidth="0.0" prefWidth="82.0" text="UnitName" />
+                              <TableColumn fx:id="armyOneH" prefWidth="70.0" text="UnitHealth" />
+                              <TableColumn fx:id="armyOneA" prefWidth="72.0" text="UnitArmor" />
+                              <TableColumn fx:id="armyOneAt" prefWidth="82.0" text="UnitAttack" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="405.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TableView fx:id="armyTwoTableView" prefHeight="405.0" prefWidth="352.0" HBox.hgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="armyTwoUT" prefWidth="95.0" text="UnitType" />
+                              <TableColumn fx:id="armyTwoUN" minWidth="0.0" prefWidth="89.0" text="UnitName" />
+                              <TableColumn fx:id="armyTwoH" minWidth="0.0" prefWidth="71.0" text="UnitHealth" />
+                              <TableColumn fx:id="armyTwoA" prefWidth="68.0" text="UnitArmor" />
+                              <TableColumn fx:id="armyTwoAt" prefWidth="75.0" text="UnitAttack" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
